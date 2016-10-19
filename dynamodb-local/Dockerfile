@@ -7,3 +7,5 @@ ENTRYPOINT ["/usr/bin/java", "-Djava.library.path=./DynamoDBLocal_lib", "-jar", 
 EXPOSE 8000
 
 CMD ["-inMemory", "-port", "8000"]
+
+VOLUME ["/var/dynamodb_local"]
